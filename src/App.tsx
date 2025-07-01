@@ -6,6 +6,11 @@ import emailIcon from './assets/email-svgrepo-com.svg'
 import sunIcon from './assets/sun-svgrepo-com.svg'
 import moonIcon from './assets/moon-svgrepo-com.svg'
 import hexagonlogo from './assets/HexagonLogo.svg'
+import layerboardGif from './assets/ProjectGifs/layerboard2.gif'
+import differentoGif from './assets/ProjectGifs/differento1.gif'
+import quizyGif from './assets/ProjectGifs/quizy1.gif'
+import tictictoeGif from './assets/ProjectGifs/tictictoe1.gif'
+import bfsdfsGif from './assets/ProjectGifs/bfsdfs1.gif'
 
 function toggleDarkMode() {
   console.log('Toggling dark mode')
@@ -15,13 +20,12 @@ function toggleDarkMode() {
 }
 
 function App() {
-  // No useState needed!
   return (
-    <div className='min-h-screen bg-gradient-to-br from-gray-50 via-blue-100 to-blue-200 text-blue-900 dark:from-slate-900 dark:via-slate-800 dark:to-teal-900 dark:text-white'>
+    <div className='min-h-screen bg-gradient-to-br from-gray-50 via-blue-100 to-blue-200 text-blue-900 dark:from-slate-900 dark:via-slate-800 dark:to-teal-900 dark:text-white transition-all duration-200'>
       <div className='container mx-auto z-100 flex justify-end fixed'>
         <button
           onClick={toggleDarkMode}
-          className='relative shadow-md pb-1 w-14 h-8 flex items-center rounded-b-xl transition-colors duration-300 bg-blue-200 dark:bg-teal-900'
+          className='relative shadow-md pb-1 w-14 h-8 flex items-center rounded-b-xl transition-colors duration-300 bg-blue-200 dark:bg-teal-900 focus:outline-none transition-all duration-200'
           aria-label='Toggle dark mode'
         >
           <span className='px-1'>
@@ -30,20 +34,20 @@ function App() {
           <span>
             <img src={moonIcon} alt='Dark Mode' className='w-5 h-5 inline' />
           </span>
-          <span className='absolute top-1 left-1 w-6 h-6 rounded-full bg-white dark:bg-slate-700 shadow-md transform transition-transform duration-300 dark:translate-x-6' />
+          <span className='absolute top-1 left-1 w-6 h-6 rounded-full bg-white dark:bg-slate-700 shadow-md transform transition-transform duration-300 dark:translate-x-6 transition-all duration-200' />
         </button>
       </div>
       <header className='container mx-auto px-4 py-12 flex flex-col md:flex-row items-center md:items-start gap-8'>
         <img
           src='https://avatars.githubusercontent.com/u/40350972?v=4'
           alt='Profile'
-          className='rounded-full border-4 border-blue-300 dark:border-blue-900 shadow-lg w-40 h-40 mb-6 md:mb-0'
+          className='rounded-full border-4 border-blue-300 dark:border-blue-900 shadow-lg w-40 h-40 mb-6 md:mb-0 transition-all duration-200'
         />
         <div className='flex-1 flex flex-col items-center md:items-start'>
           <h1 className='text-5xl md:text-6xl font-bold mb-2 leading-tight'>
             Yogeshwar.B
           </h1>
-          <span className='text-base text-blue-700 dark:text-blue-300 mb-2'>
+          <span className='text-base text-blue-700 dark:text-blue-300 mb-2 transition-all duration-200'>
             Hyderabad, India
           </span>
           <p className='text-lg mb-4 text-center md:text-left'>
@@ -60,7 +64,7 @@ function App() {
                 <img
                   src={emailIcon}
                   alt='Email'
-                  className='w-5 h-5 inline dark:invert-0 invert mr-2'
+                  className='w-5 h-5 inline dark:invert-0 invert mr-2 transition-all duration-200'
                 />
                 Mail
               </a>
@@ -74,7 +78,7 @@ function App() {
                 <img
                   src={linkedinIcon}
                   alt='LinkedIn'
-                  className='w-5 h-5 inline dark:invert-0 invert mr-2'
+                  className='w-5 h-5 inline dark:invert-0 invert mr-2 transition-all duration-200'
                 />
                 LinkedIn
               </a>
@@ -88,7 +92,7 @@ function App() {
                 <img
                   src={githubIcon}
                   alt='GitHub'
-                  className='w-5 h-5 inline dark:invert-0 invert mr-2'
+                  className='w-5 h-5 inline dark:invert-0 invert mr-2 transition-all duration-200'
                 />
                 GitHub
               </a>
@@ -102,7 +106,7 @@ function App() {
                 <img
                   src={leetcodeIcon}
                   alt='Leetcode'
-                  className='w-5 h-5 inline dark:invert-0 invert mr-2'
+                  className='w-5 h-5 inline dark:invert-0 invert mr-2 transition-all duration-200'
                 />
                 Leetcode
               </a>
@@ -116,13 +120,13 @@ function App() {
         {/* Career Overview Section */}
         <section className='mb-3'>
           <h2 className='text-3xl font-semibold mb-4'> Career Overview</h2>
-          <p className='text-lg text-blue-800 dark:text-slate-200'>
+          <p className='text-lg text-blue-800 dark:text-slate-200 transition-all duration-200'>
             Senior Software Developer with over 7 years of experience in
             developing desktop and web applications using C# and the .NET
             Framework. Proficient in both ReactJS and native JavaScript for
             creating dynamic, interactive front-end experiences.
           </p>
-          <hr className='my-4 border-blue-200 dark:border-slate-700' />
+          <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
         </section>
         {/* Tech Stack */}
         <section className='mb-3'>
@@ -213,21 +217,21 @@ function App() {
               className='max-w-full h-12'
             />
           </div>
-          <hr className='my-4 border-blue-200 dark:border-slate-700' />
+          <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
         </section>
         {/* Experience */}
         <section className='mb-3'>
           <h2 className='text-3xl font-semibold mb-4'>Work Experience</h2>
           <div className='mb-2 text-xl'>
             <a
-              className='text-3xl font-bold text-blue-600 dark:text-blue-300'
+              className='text-3xl font-bold text-blue-600 dark:text-blue-300 transition-all duration-200'
               href='https://hexagon.com/'
             >
               Hexagon R&amp;D India{' '}
               <img
                 src={hexagonlogo}
                 alt='Hexagon Logo'
-                className='w-35 inline dark:invert invert-0 mr-2'
+                className='w-35 inline dark:invert invert-0 mr-2 transition-all duration-200'
               />
             </a>
 
@@ -241,10 +245,10 @@ function App() {
           </div> */}
           <div className='pl-6'>
             <div className='mb-2'>
-              <div className='text-xl font-bold text-blue-900 dark:text-blue-200'>
+              <div className='text-xl font-bold text-blue-900 dark:text-blue-200 transition-all duration-200'>
                 Software Consultant
               </div>
-              <div className='text-sm text-blue-700 dark:text-gray-300 mb-1 italic'>
+              <div className='text-sm text-blue-700 dark:text-gray-300 mb-1 italic transition-all duration-200'>
                 2023 – current
               </div>
               <ul className='list-disc pl-6 space-y-2 text-lg'>
@@ -281,17 +285,17 @@ function App() {
                   </ul>
                 </li>
               </ul>
-              <div className='text-lg mt-2 text-blue-800 dark:text-blue-300'>
+              <div className='text-lg mt-2 text-blue-800 dark:text-blue-300 transition-all duration-200'>
                 Technologies: ReactJS, .NET (C#), ASP.NET, JavaScript, CSS,
                 Leaflet.js
               </div>
             </div>
             {/* <hr className='my-4 border-blue-200 dark:border-slate-700' /> */}
             <div className='mb-2'>
-              <div className='text-xl font-bold text-blue-900 dark:text-blue-200'>
+              <div className='text-xl font-bold text-blue-900 dark:text-blue-200 transition-all duration-200'>
                 Senior Software Engineer
               </div>
-              <div className='text-sm text-blue-700 dark:text-gray-300 mb-1'>
+              <div className='text-sm text-blue-700 dark:text-gray-300 mb-1 transition-all duration-200'>
                 2021 – 2023
               </div>
               <ul className='list-disc pl-6 space-y-2 text-lg'>
@@ -311,17 +315,17 @@ function App() {
                   drag-and-drop components.
                 </li>
               </ul>
-              <div className='text-lg mt-2 text-blue-800 dark:text-blue-300'>
+              <div className='text-lg mt-2 text-blue-800 dark:text-blue-300 transition-all duration-200'>
                 Technologies: .NET (C#), WPF, XAML, ASP.NET, JavaScript, CSS,
                 Python
               </div>
             </div>
             {/* <hr className='my-4 border-blue-200 dark:border-slate-700' /> */}
             <div className='mb-6'>
-              <div className='text-xl font-bold text-blue-900 dark:text-blue-200'>
+              <div className='text-xl font-bold text-blue-900 dark:text-blue-200 transition-all duration-200'>
                 Software Engineer
               </div>
-              <div className='text-sm text-blue-700 dark:text-gray-300 mb-1'>
+              <div className='text-sm text-blue-700 dark:text-gray-300 mb-1 transition-all duration-200'>
                 2017 – 2020
               </div>
               <ul className='list-disc pl-6 space-y-2 text-lg'>
@@ -344,12 +348,12 @@ function App() {
                   using Cisco Kinetic.
                 </li>
               </ul>
-              <div className='text-lg mt-2 text-blue-800 dark:text-blue-300'>
+              <div className='text-lg mt-2 text-blue-800 dark:text-blue-300 transition-all duration-200'>
                 Technologies: .NET Framework (C#), WinForms, HTML, JavaScript,
                 Bootstrap, MFC, Oracle, MSSQL
               </div>
             </div>
-            <hr className='my-4 border-blue-200 dark:border-slate-700' />
+            <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
           </div>
         </section>
         {/* Awards & Achievements */}
@@ -367,7 +371,7 @@ function App() {
             India.
           </span>
           <div className='text-xs italic'>2013-2017</div>
-          <hr className='my-4 border-blue-200 dark:border-slate-700' />
+          <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
         </section>
         {/* Awards & Achievements */}
         <section className='mb-3'>
@@ -386,41 +390,73 @@ function App() {
               work contributions and performance.
             </li>
           </ul>
-          <hr className='my-4 border-blue-200 dark:border-slate-700' />
+          <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
         </section>
         <section className='mb-3'>
           <h2 className='text-2xl font-semibold mb-4'>Projects</h2>
-          <div className='grid md:grid-cols-3 gap-6'>
+          <div className='flex flex-col gap-6'>
             {projects.map((project) => (
               <div
                 key={project.name}
-                className='rounded-lg shadow-lg p-6 flex flex-col bg-white text-blue-900 dark:bg-slate-800 dark:text-white'
+                className='rounded-lg shadow-lg p-6 flex flex-col bg-white text-blue-900 dark:bg-slate-800 dark:text-white transition-all duration-200'
               >
-                <h3 className='text-xl font-bold mb-2'>{project.name}</h3>
-                <p className='flex-1 text-blue-800 dark:text-slate-200'>
-                  {project.description}
-                </p>
-                <Button
-                  asChild
-                  variant='outline'
-                  className='mt-4 flex-center self-start cursor-pointer'
-                >
-                  <a
-                    href={project.url}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <img
-                      src={githubIcon}
-                      alt='GitHub'
-                      className='w-5 h-5 inline dark:invert invert-0 '
-                    />
-                  </a>
-                </Button>
+                <div className='flex flex-col md:flex-row items-start gap-4'>
+                  <div className='flex-2'>
+                    <h3 className='text-xl font-bold mb-2'>{project.name}</h3>
+
+                    <p className='flex-2 text-blue-800 dark:text-slate-200 transition-all duration-200'>
+                      {project.description}
+                    </p>
+                    <div className='flex flex-col md:flex-row items-start gap-2 mt-4'>
+                      <Button
+                        asChild
+                        variant='outline'
+                        className='mt-4 flex-center self-start cursor-pointer'
+                      >
+                        <a
+                          href={project.url}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <img
+                            src={githubIcon}
+                            alt='GitHub'
+                            className='h-5 inline dark:invert invert-0 transition-all duration-200'
+                          />
+                          {project.name == 'Quizy'
+                            ? 'API Documentation'
+                            : 'Repo'}
+                        </a>
+                      </Button>
+                      {project.liveurl && (
+                        <Button
+                          asChild
+                          variant='outline'
+                          className='mt-4 flex-center self-start cursor-pointer'
+                        >
+                          <a
+                            href={project.liveurl}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                          >
+                            <span className='relative animate-ping rounded-full bg-green-400 h-2 w-2'></span>
+                            Live Demo
+                          </a>
+                        </Button>
+                      )}
+                    </div>
+                    {/* <span className='relative animate-ping rounded-full bg-green-400 h-2 w-2'></span> */}
+                  </div>
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className='mt-4 flex-1  rounded-lg max-w-full h-auto overflow-hidden'
+                  />
+                </div>
               </div>
             ))}
           </div>
-          <hr className='my-4 border-blue-200 dark:border-slate-700' />
+          <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
         </section>
         {/* Projects & Hackathons */}
         <section className='mb-3'>
@@ -444,31 +480,60 @@ function App() {
               local documents.
             </li>
           </ul>
-          <hr className='my-4 border-blue-200 dark:border-slate-700' />
+          <hr className='my-4 border-blue-200 dark:border-slate-700 transition-all duration-200' />
         </section>
       </main>
     </div>
   )
 }
 
-const projects = [
+type Project = {
+  name: string
+  url: string
+  description: string
+  image: string
+  liveurl?: string
+}
+
+const projects: Project[] = [
   {
     name: 'LayerBoard',
     url: 'https://github.com/yogeshwar-b/layerboard',
     description:
-      'A ReactJS-based sketchpad using vector graphics with layer support.'
+      "ReactJS-based whiteboard sketchpad with vector polyline and support for Layers. This is a ground up implmentation of a whiteboard application, with no third party libraries used for the canvas. The tricky part was to implement layers and making them work in sync with user's selections and actions.",
+    image: layerboardGif,
+    liveurl: 'https://yogeshwar-b.github.io/Layerboard/'
+  },
+  {
+    name: 'Tic-Tic-Toe',
+    url: 'https://github.com/yogeshwar-b/TicTicToe',
+    description:
+      'With a Twist on the Tic Tac Toe game, where the game keeps making space for a new move everytime till one of the players wins.',
+    image: tictictoeGif,
+    liveurl: 'https://yogeshwar-b.github.io/TicTicToe/'
   },
   {
     name: 'Differento',
     url: 'https://github.com/yogeshwar-b/differento',
     description:
-      'A Ground up implementation of Git type text change comparator.'
+      'Ground-up implementation of a Git-style text diff tool, visualizing changes between file versions. Entire logic of diff was implemented from scratch, without using any third party libraries.',
+    image: differentoGif,
+    liveurl: 'https://yogeshwar-b.github.io/differento/'
   },
   {
     name: 'Quizy',
     url: 'https://github.com/yogeshwar-b/quizy-be',
     description:
-      'A WebSocket based Multiplayer Quiz game Backend API using ExpressJS and MongoDB, with support for leaderboards and game server rooms.'
+      'Backend API for a multiplayer quiz game, built with ExpressJS and Socket.IO, supporting real-time play and leaderboards.',
+    image: quizyGif
+  },
+  {
+    name: 'VisualizeGraphSearch',
+    url: 'https://github.com/yogeshwar-b/VisualizeGraphSearch',
+    description:
+      'Visualization tool for graph search algorithms (BFS & DFS) with custom source/destination node selection.',
+    image: bfsdfsGif,
+    liveurl: 'https://yogeshwar-b.github.io/VisualizeGraphSearch/'
   }
 ]
 
