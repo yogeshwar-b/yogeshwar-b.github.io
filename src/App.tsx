@@ -10,7 +10,7 @@ import layerboardGif from './assets/ProjectGifs/layerboard2.gif'
 import differentoGif from './assets/ProjectGifs/differento1.gif'
 import quizyGif from './assets/ProjectGifs/quizy1.gif'
 import tictictoeGif from './assets/ProjectGifs/tictictoe1.gif'
-import bfsdfsGif from './assets/ProjectGifs/bfsdfs1.gif'
+import bfsdfsGif from './assets/ProjectGifs/bfsdfs2.gif'
 
 function toggleDarkMode() {
   console.log('Toggling dark mode')
