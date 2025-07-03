@@ -10,7 +10,7 @@ import layerboardGif from './assets/ProjectGifs/layerboard2.gif'
 import differentoGif from './assets/ProjectGifs/differento1.gif'
 import quizyGif from './assets/ProjectGifs/quizy1.gif'
 import tictictoeGif from './assets/ProjectGifs/tictictoe1.gif'
-import bfsdfsGif from './assets/ProjectGifs/bfsdfs1.gif'
+import bfsdfsGif from './assets/ProjectGifs/bfsdfs2.gif'
 
 function toggleDarkMode() {
   console.log('Toggling dark mode')
@@ -378,7 +378,7 @@ function App() {
           <h2 className='text-2xl font-semibold mb-4'>Awards & Achievements</h2>
           <ul className='list-disc pl-6 space-y-2 text-lg'>
             <li>
-              <b>Secured a Rank of 1288 in GATE 2017</b> – Top 1% of around 1
+              <b>Secured a Rank of 1288 in GATE CS 2017</b> – Top 1% of around 1
               Lakh applicants.
             </li>
             <li>
